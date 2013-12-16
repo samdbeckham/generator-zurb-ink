@@ -23,18 +23,13 @@ ZurbInkGenerator.prototype.askFor = function askFor() {
   console.log(this.yeoman);
 
   var prompts = [{
-    name: 'contactName',
-    message: "What's your name stranger?",
-    default: "Stranger"
-  },{
-    name: 'emailName',
+    name: 'campaignName',
     message: 'What would you like to call your campaign?',
     default: "emailer"
   }];
 
   this.prompt(prompts, function (props) {
-    this.contactName = props.contactName;
-    this.emailName = props.emailName;
+    this.campaignName = props.campaignName.replace(' ', '-');
     cb();
   }.bind(this));
 };

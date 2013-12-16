@@ -1,5 +1,5 @@
 {
-  "name": "<%= emailName %>",
+  "name": "<%= campaignName %>",
   "version": "0.0.0",
   "devDependencies": {
     "ink": "~1.0.4"
